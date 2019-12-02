@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <style>
+      input, ul {
+        font-size: 16px;
+        padding: 4px 8px;
+        width: 40vw;
+        margin: 0 auto;
+        display: block;
+      }
+      .result:hover {
+        cursor: pointer;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#">
+      <input type="text" id="query" />
+    </form>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module">
+      import Searchbox from './searchbox.js';
+      let sb = new Searchbox(document.querySelector('#query'));
+    </script>
+  </body>
